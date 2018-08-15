@@ -12,10 +12,10 @@ Modified to work for LG and HTC devices.
 
 **Prerequisite: Have libusb installed.**
 
-#####Build:
+##### Build:
 	gcc -o usbswitcher usbswitcher.c -lusb
 
-#####Usage:
+##### Usage:
 To switch the USB configuration of a Samsung device:
 
 	./usbswitcher -s
@@ -28,6 +28,6 @@ To switch the USB configuration of an HTC device:
 
 	./usbswitcher -h
 
-#####Extending support:
+##### Extending support:
 
 To add support for additional vendors, provide the VENDOR ID. To differentiate between multiple devices from the same vendor, comment back in the `(dev->descriptor.idProduct == PRODUCT_ID)` check and adjust the value of variables `SAMSUNG_VENDOR_ID`/`LG_VENDOR_ID`/`HTC_VENDOR_ID`.
