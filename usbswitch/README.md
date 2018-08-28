@@ -10,9 +10,13 @@ Originally found on <https://github.com/ud2/advisories/tree/master/android/samsu
 
 Modified to work for LG and HTC devices.
 
-**Prerequisite: Have libusb installed.**
+##### Prerequisites
+* A Debian based system
+* A working build environment (`apt-get install build-essential`)
+* Pre-1.0 libusb (`apt-get install libusb-dev`)
 
 ##### Build:
+	
 	gcc -o usbswitcher usbswitcher.c -lusb
 
 ##### Usage:
