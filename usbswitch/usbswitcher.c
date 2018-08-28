@@ -122,7 +122,10 @@ int main(int argc, char **argv) {
   }
   info("Device found, %d configuration(s)", dev->descriptor.bNumConfigurations);
 
-  assert(dev->descriptor.bNumConfigurations == 2);
+  if (dev->descriptor.bNumConfigurations == 1) {
+    info("Device has only 1 configuration, no need to switch");
+    return 0;
+  }
 
   udev = usb_open(dev);
   if (!udev) {
