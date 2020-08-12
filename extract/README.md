@@ -75,7 +75,7 @@ To have extracted contents saved (by supplying 1 for the keepstuff argument), se
 * `EXTUSER` and `EXTGROUP`: when the keepstuff flag is set, saved contents will have their ownership and group changed to the designated values of `EXTUSER` and `EXTGROUP`.
 
 ##### Dependencies:
-Our extract script requires a number of dependencies, which we list below. Make sure to acquire or install all of these and adjust the locations to the binaries/executables prior to running our **atextract.sh** script. If all 17 tools are placed in the same directory, this may be done by simply adjusting the DEPPATH variable.
+Our extract script requires a number of dependencies, which we list below. Make sure to acquire or install all of these and adjust the locations to the binaries/executables prior to running our **atextract.sh** script. If all 17 tools are placed in the same directory, this may be done by simply adjusting the DEPPATH variable. [You can try out our ZIP of our tools folder (Mega Link)](https://mega.nz/file/Lgwz1DLB#GeG6YYbsykbOdonNyFFtqaC58quUzPDvQoBn1Al3J0g) (Ubuntu 16.04 compiles) to speed up the process.
 Otherwise, manually update lines 61 through 79.
 
 1. **simg2img**: converts Android sparse image format (simg) into mountable filesystem images (img). Sparse images may be standalone files or a collection of broken-apart chunks.
